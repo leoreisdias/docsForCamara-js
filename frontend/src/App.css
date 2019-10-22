@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  background: black url(./assets/background.jpg) no-repeat;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+body,
+input,
+button {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+img {
+  max-width: 150px;
+}
+
+.container {
+  margin: 40px auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  margin-top: 20px;
+  border-radius: 4px;
+  padding: 40px;
+  box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.397);
+}
+
+.content > p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+.content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.content form input {
+  border: 1px solid rgb(167, 162, 162);
+  border-radius: 5px;
+  height: 50px;
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+.content button.btn {
+  margin-top: 50px;
+  align-self: center;
+  width: 70%;
+  border: 0px;
+  border-radius: 5px;
+  box-shadow: 2px 3px 1px rgba(104, 100, 100, 0.582);
+  height: 42px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: rgb(11, 82, 17);
+  color: #fff;
+  cursor: pointer;
+}
+
+.content button:disabled {
+  background-color: #ddd;
+  cursor: none;
+  box-shadow: none;
+}
+
+.content button:disabled:hover {
+  background-color: #ddd;
+  cursor: unset;
+}
+
+.content button.btn:enabled:hover {
+  background-color: rgb(54, 167, 63);
+}
+
+label#pdfpauta {
+  border: 2px dashed #ddd;
+  cursor: pointer;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+label#pdfpauta input {
+  display: none;
+}
+
+label#pdfpauta.pauta-added {
+  border: 0;
+}
+
+label#pdfpauta.pauta-added img {
+  display: none;
+}
+
+button.listPautas {
+  align-self: center;
+  max-width: 150px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  justify-self: center;
+  padding: 8px 10px 8px 10px;
+  font-size: 16px;
+  color: rgb(221, 226, 223);
+  font-weight: bold;
+  border: 0;
+  border-radius: 5px;
+  background-color: rgba(15, 10, 10, 0.767);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.466);
+  cursor: pointer;
+}
