@@ -60,17 +60,17 @@ const IndexPauta = ({ history }) => {
     let bar = window.confirm("Excluir Pauta?");
     if (bar) {
       await api.delete(`/pautas/${id}`);
-      window.reload();
+      window.location.reload();
     }
   };
 
   return (
     <div className="listFiles">
       <div className="header">
+        <p>PAUTAS ATÉ O MOMENTO</p>
         <button className="sendNew" onClick={newPauta}>
           Enviar nova Pauta
         </button>
-        <p>PAUTAS ATÉ O MOMENTO</p>
       </div>
       <div onLoad={flag ? null : invertPages} className="divFiles">
         <ul className="pauta-list">

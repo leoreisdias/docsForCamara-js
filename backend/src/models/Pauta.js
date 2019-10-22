@@ -3,8 +3,7 @@ const mongoosePaginate = require("mongoose-paginate");
 
 const pautaSchema = new mongoose.Schema(
   {
-    pauta: String,
-    description: String
+    pauta: String
   },
   {
     toJSON: {

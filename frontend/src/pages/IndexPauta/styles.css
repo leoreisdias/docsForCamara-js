@@ -12,6 +12,7 @@
 
 .header {
   display: flex;
+  flex-direction: column;
   align-content: center;
 }
 
@@ -30,13 +31,13 @@
   cursor: pointer;
 }
 
-.header > p {
+.header p {
   align-self: center;
   font-size: 20px;
   margin-bottom: 20px;
   line-height: 30px;
   font-weight: bold;
-  margin-left: 300px;
+  margin-left: 20px;
 }
 
 div.divFiles {
